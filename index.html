@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page moderna y profesional">
+    <meta name="keywords" content="landing, page, responsive">
+    <meta name="author" content="TES LTDA">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo_unidos.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=2.3">
+    <link rel="stylesheet" href="assets/css/categories.css?v=3.0">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <title>Unidos</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__brand">
+                    <div class="navbar__jacinta">
+                        <a href="index.html">
+                            <img src="assets/images/jasinta_sin_fondo.png" 
+                                 alt="Jasinta" 
+                                 class="navbar__jacinta-img navbar__jacinta--animated"
+                                 data-hover-src="assets/images/jasinta_canasta_sin_fondo.png"
+                                 data-original-src="assets/images/jasinta_sin_fondo.png">
+                        </a>
+                    </div>
+                    <div class="navbar__logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo_unidos.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <ul class="navbar__menu" id="navMenu">
+                    <li><a href="index.html" class="navbar__link">Inicio</a></li>
+                    <li><a href="nosotros.html" class="navbar__link">Nosotros</a></li>
+                    <li><a href="supermercados.html" class="navbar__link">Supermercados</a></li>
+                    <li><a href="contactanos.html" class="navbar__link">Contáctanos</a></li>
+                    <li><a href="https://byronproducemusic.wixsite.com/unidosestereo" target="_blank" class="navbar__link navbar__link--special">🎤 Unidos Estéreo</a></li>
+                </ul>
+                <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Video de Fondo -->
+        <video class="hero__video" autoplay muted loop playsinline>
+            <source src="assets/videos/unidos_index.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+        
+        <!-- Overlay para mejor legibilidad del texto -->
+        <div class="hero__overlay"></div>
+        
+        <div class="container hero__container">
+            <a href="#" class="hero__slogan">UNIDOS ganamos todos</a>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-card__icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-card__number" data-target="85">0</div>
+                    <div class="stat-card__label">Supermercados</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="stat-card__number" data-target="7">0</div>
+                    <div class="stat-card__label">Departamentos</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <div class="stat-card__number" data-target="41">0</div>
+                    <div class="stat-card__label">Municipios</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-card__number" data-target="420">0</div>
+                    <div class="stat-card__label">Referencias</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <p class="features__intro">Nacimos en el corazón de Colombia en el año 2009, gracias a un grupo de empresarios soñadores y comprometidos con el crecimiento de nuestra región. Unidos es el resultado de una visión compartida: crear una marca 100% colombiana que ofreciera productos de excelente calidad a un precio justo, fortaleciendo a los supermercados independientes y a nuestros aliados,  llegando con confianza a los hogares de miles de familias.
+                                       <br></br>Más que una marca, somos una historia de unión, esfuerzo y orgullo colombiano. Creemos en el trabajo en equipo, en la oportunidad de crecer unidos y en el poder de llevar lo mejor de nuestra tierra a cada mesa. </p>
+            <div class="features__grid">
+                <a href="supermercados.html" class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Carrito de supermercado mejorado -->
+                            <circle cx="9" cy="21" r="1" fill="currentColor"></circle>
+                            <circle cx="20" cy="21" r="1" fill="currentColor"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            <path d="M8 6l1 5"></path>
+                            <path d="M14 6l1 5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Supermercados</h3>
+                    <p class="feature-card__description">
+                        Conoce nuestras<br>ubicaciones
+                    </p>
+                </a>
+
+                <a href="nosotros.html" class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Libro abierto con detalles -->
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            <line x1="12" y1="7" x2="12" y2="21"></line>
+                            <path d="M6 9h3" opacity="0.6"></path>
+                            <path d="M6 12h3" opacity="0.6"></path>
+                            <path d="M15 9h3" opacity="0.6"></path>
+                            <path d="M15 12h3" opacity="0.6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Nosotros</h3>
+                    <p class="feature-card__description">
+                        Descubre nuestra<br>historia
+                    </p>
+                </a>
+
+                <div class="feature-card feature-card--categories" id="categoriesCard">
+                    <div class="feature-card__icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Stack de cajas/paquetes con efecto 3D -->
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z"></path>
+                            <path d="M2 17L12 22L22 17"></path>
+                            <path d="M2 12L12 17L22 12"></path>
+                            <!-- Detalles y profundidad -->
+                            <path d="M12 12V22" opacity="0.6"></path>
+                            <path d="M7 9.5V14.5" opacity="0.4"></path>
+                            <path d="M17 9.5V14.5" opacity="0.4"></path>
+                            <!-- Etiqueta/tag de producto -->
+                            <circle cx="18" cy="6" r="2.5" fill="currentColor" opacity="0.2"></circle>
+                            <path d="M18 5V7" stroke-width="2"></path>
+                            <path d="M17 6H19" stroke-width="2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Productos</h3>
+                    <p class="feature-card__description">
+                        Explora nuestro<br>catálogo
+                    </p>
+                </div>
+
+                <a href="#" class="feature-card feature-card--blog" id="blogCard">
+                    <div class="feature-card__icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Periódico/Blog moderno -->
+                            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path>
+                            <!-- Líneas de texto -->
+                            <path d="M10 6h8"></path>
+                            <path d="M10 10h8"></path>
+                            <path d="M10 14h8"></path>
+                            <path d="M10 18h5"></path>
+                            <!-- Detalle decorativo -->
+                            <circle cx="15" cy="18" r="1" fill="currentColor" opacity="0.6"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Blog</h3>
+                    <p class="feature-card__description">
+                        Nuestras últimas<br>novedades
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section id="instagram-feed" class="instagram-section">
+        <div class="container">
+            <!-- Feed sin API: usa un widget de terceros + fallback local de 4 ítems -->
+            <div class="instagram-row" aria-label="Últimos posts de Instagram">
+                <!-- Opción sin registro ni API: embed oficial del perfil recortado a 1 fila -->
+                <iframe
+                    title="Instagram Unidos - últimos posts"
+                    class="instagram-row__iframe instagram-embed"
+                    src="https://www.instagram.com/unidos.ganamostodos/embed"
+                    allowtransparency="true"
+                    frameborder="0"
+                    scrolling="no"
+                    loading="lazy"></iframe>
+
+                <!-- Loader mientras carga el embed (sin fondo) -->
+                <div class="instagram-row__loader" id="instagramLoader" aria-hidden="true">
+                    <div class="instagram-loader__spinner" role="status" aria-label="Cargando publicaciones"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Fila superior: Iconos de navegación -->
+                <div class="footer__nav-row">
+                    <nav class="footer__nav" aria-label="Navegación principal del pie de página">
+                    <a href="index.html" class="footer__nav-icon" title="Inicio" aria-label="Inicio">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7"/>
+                            <path d="M9 22V12h6v10"/>
+                        </svg>
+                    </a>
+                    <a href="nosotros.html" class="footer__nav-icon" title="Nosotros" aria-label="Nosotros">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M4 4v15.5"/>
+                            <path d="M8 4h12v13H6.5A2.5 2.5 0 0 0 4 19.5"/>
+                        </svg>
+                    </a>
+                    <a href="supermercados.html" class="footer__nav-icon" title="Supermercados" aria-label="Supermercados">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 12.39a2 2 0 0 0 2 1.61h7.72a2 2 0 0 0 2-1.61L21 6H6"/>
+                        </svg>
+                    </a>
+                    <a href="contactanos.html" class="footer__nav-icon" title="Contáctanos" aria-label="Contáctanos">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.06.96.27 1.9.62 2.79a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.35 1.83.56 2.79.62A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </a>
+                    </nav>
+                </div>
+                
+                <!-- Fila inferior: Iconos sociales y teléfono -->
+                <div class="footer__social-row">
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/unidos.pahorrar" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/unidos.ganamostodos/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    <!--<a href="" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </a>-->
+                    </div>
+                    <div class="footer__contact-header">
+                        <a href="tel:+576063204121" class="footer__phone">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            606 320 4121
+                        </a>
+                    </div>
+                    <p class="footer__tagline footer__tagline--unidos">UNIDOS ganamos todos</p>
+                    <p class="footer__tagline">Una marca 100% colombiana</p>
+                </div>
+                
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Unidos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Categorías de Productos -->
+    <div id="categoriesModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="categoriesModalTitle">
+        <div class="modal__content modal__content--lg">
+            <button class="modal__close" data-close="categoriesModal" aria-label="Cerrar">&times;</button>
+            <h2 id="categoriesModalTitle" class="modal__title modal-title--fancy">Catálogo de Productos Unidos</h2>
+            <div class="modal__body categories-scroll">
+                
+                <!-- Categoría: Aceites y grasas -->
+                <div class="timeline-item category-section">
+                    <div class="timeline-year category-year">Aceites y Grasas</div>
+                    <div class="timeline-line"></div>
+                    <div class="category-carousel-wrapper">
+                        <button class="timeline-nav timeline-nav--prev" aria-label="Anterior">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="timeline-carousel category-carousel">
+                            <div class="timeline-track category-track">
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/aceite_girasol_unidos_x3000ml.png" alt="Aceite Girasol Unidos 3000ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Aceite de Girasol</h4>
+                                        <p>Unidos x3000ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/atun_en_aceite_girasol_tripack_unidos_x240gr_cx20.png" alt="Atún en Aceite Girasol" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Atún en Aceite de Girasol</h4>
+                                        <p>Tripack x240gr</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/lomitos_de_atun_en_aceite_de_girasol_unidos_x160g.png" alt="Lomitos de Atún" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Lomitos de Atún</h4>
+                                        <p>En aceite de girasol x160g</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/margarina_edicion_especial_x1000gr.png" alt="Margarina Edición Especial" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Margarina Edición Especial</h4>
+                                        <p>Unidos x1000gr</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/margarina_en_barra_unidos_x125gr_cx80.png" alt="Margarina en Barra" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Margarina en Barra</h4>
+                                        <p>Unidos x125gr</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/margarina_unidos_x1000g.png" alt="Margarina Unidos" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Margarina</h4>
+                                        <p>Unidos x1000g</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/margarina_unidos_x250gr.png" alt="Margarina Unidos 250gr" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Margarina</h4>
+                                        <p>Unidos x250gr</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/mayonesa_unidos_x380gr.png" alt="Mayonesa Unidos 380gr" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Mayonesa</h4>
+                                        <p>Unidos x380gr</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/mayonesa_unidos_x200gr.png" alt="Mayonesa Unidos 200gr" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Mayonesa</h4>
+                                        <p>Unidos x200gr</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/aceite_soya_900ml.png" alt="Aceite de Soya 900ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Aceite de Soya</h4>
+                                        <p>Unidos x900ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/aceite_soya_500ml.png" alt="Aceite de Soya 500ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Aceite de Soya</h4>
+                                        <p>Unidos x500ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/aceite_soya_250ml.png" alt="Aceite de Soya 250ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Aceite de Soya</h4>
+                                        <p>Unidos x250ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/aceite_soya_2000ml.png" alt="Aceite de Soya 2000ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Aceite de Soya</h4>
+                                        <p>Unidos x2000ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/aceite_soya_1000ml.png" alt="Aceite de Soya 1000ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Aceite de Soya</h4>
+                                        <p>Unidos x1000ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/aceite_oliva_500.png" alt="Aceite de Oliva 500ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Aceite de Oliva</h4>
+                                        <p>Unidos x500ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/aceite_oliva_1000.png" alt="Aceite de Oliva 1000ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Aceite de Oliva</h4>
+                                        <p>Unidos x1000ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/aceite_soya_unidos_x3000ml_cx6.png" alt="Aceite de Soya 3000ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Aceite de Soya</h4>
+                                        <p>Unidos x3000ml</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="timeline-nav timeline-nav--next" aria-label="Siguiente">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Categoría: Aseo personal -->
+                <div class="timeline-item category-section">
+                    <div class="timeline-year category-year">Aseo Personal</div>
+                    <div class="timeline-line"></div>
+                    <div class="category-carousel-wrapper">
+                        <button class="timeline-nav timeline-nav--prev" aria-label="Anterior">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="timeline-carousel category-carousel">
+                            <div class="timeline-track category-track">
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/toallas_humedas_antibacterial_max_amarillo_dampy_x120und_cx15.jpg" alt="Toallas Húmedas" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Toallas Húmedas Antibacteriales</h4>
+                                        <p>Dampy x120und</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/jabon_corporal_amatic_frutal_300ml.png" alt="Jabón Corporal Frutal" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Jabón Corporal Amatic</h4>
+                                        <p>Frutal x300ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/jabon_liquido_manos_frutos_rojos_unidos_2000.png" alt="Jabón Líquido Frutos Rojos" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Jabón Líquido para Manos</h4>
+                                        <p>Frutos rojos x2000ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/jabon_liquido_frutos_rojos_x2000.png" alt="Jabón Líquido 2000ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Jabón Líquido</h4>
+                                        <p>Frutos rojos x2000ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/jabon_liquido_frutos_rojos_x1000.png" alt="Jabón Líquido 1000ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Jabón Líquido</h4>
+                                        <p>Frutos rojos x1000ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/jabon_corporal_amatic_frutal_750ml.png" alt="Jabón Corporal 750ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Jabón Corporal Amatic</h4>
+                                        <p>Frutal x750ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/copitos_algodon_unidos.png" alt="Copitos de Algodón" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Copitos de Algodón</h4>
+                                        <p>Unidos</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/jabon_barra_azul_unidos.png" alt="Jabón de Barra Líquido Azul" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Jabón de Barra</h4>
+                                        <p>Líquido Azul x960ml</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="timeline-nav timeline-nav--next" aria-label="Siguiente">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Categoría: Bebidas -->
+                <div class="timeline-item category-section">
+                    <div class="timeline-year category-year">Bebidas</div>
+                    <div class="timeline-line"></div>
+                    <div class="category-carousel-wrapper">
+                        <button class="timeline-nav timeline-nav--prev" aria-label="Anterior">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="timeline-carousel category-carousel">
+                            <div class="timeline-track category-track">
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/cafe_unidos_x500g.png" alt="Café Unidos 500g" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Café</h4>
+                                        <p>Unidos x500g</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/atun_en_agua_unidos_x170gr_cx48.png" alt="Atún en Agua" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Atún en Agua</h4>
+                                        <p>Unidos x170gr</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/cafe_liofilizado_unidos_x85g.png" alt="Café Liofilizado" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Café Liofilizado</h4>
+                                        <p>Unidos x85g</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/agua_pura_unidos_x1000.png" alt="Agua Pura 1000ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Agua Pura</h4>
+                                        <p>Unidos x1000ml</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-content product-card">
+                                    <div class="timeline-image product-image">
+                                        <img src="assets/images/productos/agua_pura_unidos_600.png" alt="Agua Pura 600ml" loading="lazy">
+                                    </div>
+                                    <div class="timeline-text product-info">
+                                        <h4>Agua Pura</h4>
+                                        <p>Unidos x600ml</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="timeline-nav timeline-nav--next" aria-label="Siguiente">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Más categorías continúan... (El resto se carga dinámicamente o se puede agregar aquí) -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales de Blog -->
+    <div id="blogModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="blogModalTitle">
+        <div class="modal__content modal__content--lg">
+            <button class="modal__close" data-close="blogModal" aria-label="Cerrar">&times;</button>
+            <div class="modal__header-blog">
+                <!-- Video de fondo de bandera colombiana solo en el encabezado -->
+                <video class="modal__header-video" autoplay muted loop playsinline>
+                    <source src="assets/videos/bandera_colombia.mp4" type="video/mp4">
+                </video>
+                <h2 id="blogModalTitle" class="modal__title">Blog Unidos</h2>
+            </div>
+            <div class="modal__body blog-scroll">
+                <div id="blogAllNews" class="blog-all-news"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js?v=2.3"></script>
+    <script src="assets/js/categories.js?v=3.3"></script>
+</body>
+</html>

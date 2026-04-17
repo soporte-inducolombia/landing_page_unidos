@@ -1,0 +1,973 @@
+/* Estilos para la página de Supermercados */
+
+/* Header transparente sobre el video; sólido al hacer scroll */
+.header {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: var(--shadow-md);
+}
+
+/* Colores del navbar según estado */
+.header:not(.scrolled) .navbar__link {
+    color: #fff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.header.scrolled .navbar__link {
+    color: var(--color-text-primary) !important;
+    text-shadow: none !important;
+}
+
+.header:not(.scrolled) .navbar__link:hover {
+    color: var(--color-accent) !important;
+}
+
+.header.scrolled .navbar__link:hover {
+    color: var(--color-primary) !important;
+}
+
+.header:not(.scrolled) .navbar__toggle span {
+    background-color: #fff !important;
+}
+
+.header.scrolled .navbar__toggle span {
+    background-color: var(--color-text-primary) !important;
+}
+
+.page-hero {
+    /* Igualamos la altura y estructura al hero del index/nosotros */
+    margin-top: 0;
+    padding-top: calc(var(--spacing-2xl) + 70px);
+    padding-bottom: var(--spacing-lg);
+    position: relative;
+    min-height: 387px; /* misma altura base */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: white;
+    text-align: center;
+}
+
+/* Video de fondo en el hero de Supermercados */
+.page-hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Overlay para mejorar legibilidad */
+.page-hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+/* Contenedor por encima del overlay */
+.page-hero__container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero__title {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.page-hero__subtitle {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xl);
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Sección de Departamentos */
+.departamentos {
+    padding: var(--spacing-4xl) 0;
+    /* Fondo con la imagen "fondo.jpg" como en index */
+    background: url('../images/fondo.jpg') center/cover fixed no-repeat;
+}
+
+.departamentos__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-top: var(--spacing-3xl);
+}
+
+/* Tarjetas de Departamentos */
+.departamento-card {
+    background-color: var(--color-background);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius-xl);
+    padding: 0;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    justify-content: flex-end;
+}
+
+.departamento-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    transform: scaleX(0);
+    transition: transform var(--transition-base);
+}
+
+.departamento-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.departamento-card:hover::before {
+    transform: scaleX(1);
+}
+
+.departamento-card__map {
+    width: 120px;
+    height: 120px;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+    transition: all var(--transition-base);
+}
+
+.departamento-card:hover .departamento-card__map {
+    transform: scale(1.1) rotate(5deg);
+    color: var(--color-secondary);
+}
+
+.map-svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.departamento-card__title {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 2;
+}
+
+.departamento-card__subtitle {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-base);
+    color: white;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 2;
+}
+
+.departamento-card__arrow {
+    font-size: var(--font-size-2xl);
+    color: white;
+    font-weight: var(--font-weight-bold);
+    transition: transform var(--transition-base);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 2;
+}
+
+.departamento-card__content {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 70%, transparent 100%);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    position: relative;
+    z-index: 1;
+}
+
+.departamento-card:hover .departamento-card__arrow {
+    transform: translateX(10px);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .page-hero {
+        min-height: 320px;
+        margin-top: 0;
+        padding-top: calc(var(--spacing-xl) + 70px);
+        padding-bottom: var(--spacing-md);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Asegurar el mismo menú móvil que index/nosotros */
+    .navbar__menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: var(--spacing-2xl);
+        box-shadow: none;
+        transition: left var(--transition-base);
+        z-index: var(--z-index-dropdown);
+    }
+
+    .navbar__menu.active {
+        left: 0;
+    }
+
+    /* Colores y efectos de enlaces dentro del menú móvil */
+    .navbar__menu .navbar__link {
+        position: relative;
+        color: #244B5A !important;
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-semibold);
+        padding: var(--spacing-md) var(--spacing-lg);
+        width: 100%;
+        text-align: center;
+        border-bottom: none;
+        animation: breathe 3s ease-in-out infinite;
+        text-shadow:
+            0 2px 4px rgba(0,0,0,0.25),
+            0 0 10px rgba(36, 75, 90, 0.45),
+            0 0 16px rgba(0, 148, 144, 0.35);
+        transition: all var(--transition-base);
+        transform-origin: center;
+    }
+
+    .navbar__menu .navbar__link:hover {
+        color: #244B5A !important;
+        background-color: transparent;
+        border-radius: var(--border-radius-md);
+        animation: breatheHover 2s ease-in-out infinite;
+        text-shadow:
+            0 3px 8px rgba(0,0,0,0.3),
+            0 0 22px rgba(36, 75, 90, 0.6),
+            0 0 28px rgba(0, 148, 144, 0.5);
+    }
+    
+    /* Asegurar color en todos los estados */
+    .navbar__menu .navbar__link:visited,
+    .navbar__menu .navbar__link:active,
+    .navbar__menu .navbar__link:focus {
+        color: #244B5A !important;
+    }
+
+    .navbar__menu .navbar__link::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--color-primary), var(--color-accent), var(--color-primary));
+        background-size: 200% 100%;
+        transition: width 0.4s ease;
+        animation: shimmer 2s linear infinite;
+        border-radius: 2px;
+        opacity: 1;
+    }
+
+    .navbar__menu .navbar__link:hover::after {
+        width: 95%;
+    }
+
+    .page-hero {
+        min-height: 300px;
+        padding-top: calc(var(--spacing-lg) + 70px);
+        padding-bottom: var(--spacing-md);
+    }
+
+    .page-hero__title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .page-hero__subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .departamentos__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .departamento-card__map {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        min-height: 280px;
+        padding-top: calc(var(--spacing-md) + 70px);
+        padding-bottom: var(--spacing-sm);
+    }
+
+    .page-hero__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .departamento-card {
+        padding: var(--spacing-lg);
+    }
+
+    .departamento-card__title {
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#supermercadosModal .modal__content {
+    background-color: transparent !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius-xl);
+    width: 90%;
+    max-width: 900px;
+    max-height: 80vh;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    animation: slideUp 0.3s ease;
+    position: relative;
+    backdrop-filter: none !important;
+}
+
+#supermercadosModal .modal__content::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(6px);
+    z-index: 0;
+    border-radius: var(--border-radius-xl);
+}
+
+#supermercadosModal .modal__content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.35);
+    z-index: 1;
+    border-radius: var(--border-radius-xl);
+}
+
+.modal__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--color-primary);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 30;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal__close:hover {
+    background-color: var(--color-secondary);
+    transform: rotate(90deg);
+}
+
+#supermercadosModal .modal__body {
+    position: relative;
+    z-index: 20;
+    overflow-y: auto;
+    max-height: calc(80vh - 100px);
+    background-image: none !important;
+    background: transparent !important;
+}
+
+#supermercadosModal .modal__body::before {
+    display: none !important;
+}
+
+/* Encabezado del modal con bandera */
+.modal__header {
+    background: linear-gradient(135deg, rgba(0, 148, 144, 0.85) 0%, rgba(0, 184, 179, 0.85) 50%, rgba(0, 148, 144, 0.85) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    margin-bottom: var(--spacing-2xl);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding-right: 0; /* Elimina el padding artificial que recortaba Jasinta */
+}
+
+.modal__header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
+}
+
+.modal__header::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(0, 148, 144, 0.3), transparent);
+    filter: blur(8px);
+    z-index: 0;
+}
+
+.modal__header-title {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-6xl);
+    font-weight: var(--font-weight-bold);
+    color: white;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px;
+}
+
+.modal__header-bandera {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: none;
+    height: 100%;
+    max-height: none;
+    width: auto;
+    z-index: 3;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.modal__header-jacinta {
+    position: absolute;
+    right: calc(var(--spacing-xl) / 2);
+    bottom: 12%; /* Subida: más centrada visualmente */
+    top: auto !important;
+    height: auto;
+    max-height: 80%;
+    width: auto;
+    max-width: 24vw;
+    object-fit: contain;
+    z-index: 3;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+    transform-origin: bottom right;
+    box-sizing: border-box;
+}
+
+.modal__header-jacinta--animated:hover,
+.modal__header-jacinta:hover {
+    transform: scale(1.07) rotate(-4deg);
+    bottom: 12%;
+    top: auto !important;
+}
+
+.modal__header-jacinta--animated.switching {
+    animation: jasintaSurprise 0.6s ease-in-out;
+}
+
+.supermercados-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-xl) var(--spacing-2xl);
+}
+
+.supermercado-item {
+    /* Usar la imagen hexagono_azul.png como marco de la carta */
+    background: transparent url('../images/hexagono_azul.png') center/100% 100% no-repeat;
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: transform 0.25s ease, filter 0.25s ease;
+    cursor: default;
+    text-decoration: none;
+}
+
+/* Badge "ALIADOS" - diseño sutil y elegante */
+/* Solo se muestra en cartas específicas con data-aliado="true" */
+.supermercado-item[data-aliado="true"]::after {
+    content: 'ALIADOS';
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #009490;
+    background: linear-gradient(135deg, #FFDA00 0%, #FFE54D 50%, #FFDA00 100%);
+    padding: 4px 12px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    z-index: 2;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.supermercado-item[data-aliado="true"]:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 148, 144, 0.35);
+}
+
+.supermercado-item:hover {
+    transform: translateY(-4px) scale(1.02);
+    filter: brightness(1.04);
+}
+
+.supermercado-item--especial {
+    background: transparent url('../images/hexagono_azul.png') center/100% 100% no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+    padding-top: var(--spacing-2xl); /* espacio para el título arriba */
+    aspect-ratio: 1;
+    position: relative;
+    border: none;
+    box-shadow: none;
+}
+
+/* Badge "ALIADOS" para cartas especiales */
+/* Solo se muestra en cartas específicas con data-aliado="true" */
+.supermercado-item--especial[data-aliado="true"]::after {
+    content: 'ALIADOS';
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #009490;
+    background: linear-gradient(135deg, #FFDA00 0%, #FFE54D 50%, #FFDA00 100%);
+    padding: 4px 12px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    z-index: 2;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.supermercado-item--especial[data-aliado="true"]:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 148, 144, 0.35);
+}
+
+.supermercado-item--especial:hover {
+    transform: translateY(-4px) scale(1.02);
+    filter: brightness(1.04);
+}
+
+.supermercado-item__header {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    color: #ffffff; /* texto blanco solicitado */
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    width: 80%;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.supermercado-item__logo {
+    width: 100%;
+    max-width: 150px; /* reducido para logos más pequeños */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex: 1 1 auto; /* ocupar el espacio vertical disponible */
+}
+
+.supermercado-item__logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0;
+    box-shadow: none;
+    will-change: transform;
+    animation: logoFloat 3.8s ease-in-out infinite, logoPulse 6.5s ease-in-out infinite;
+}
+
+/* Ajuste específico: logo Ahitá (ahita.png) más compacto dentro del hexágono */
+.supermercado-item__logo img[src*="ahita"] {
+    width: 60% !important; /* reducir aún más este logo */
+    max-width: 120px;
+}
+
+/* Fallback por si el logo no está envuelto en .supermercado-item__logo */
+.supermercados-list img[src*="ahita"] {
+    width: 60% !important;
+    max-width: 120px;
+}
+
+/* Ajuste específico: logo Almin (almin.png) más compacto dentro del hexágono */
+.supermercado-item__logo img[src*="almin"] {
+    width: 65% !important; /* reducir para mejor visualización */
+    max-width: 130px;
+}
+
+/* Fallback por si el logo no está envuelto en .supermercado-item__logo */
+.supermercados-list img[src*="almin"] {
+    width: 65% !important;
+    max-width: 130px;
+}
+
+
+/* Solo para la carta con título "ALTA GRACIA - ARABIA - PEREIRA" */
+.supermercado-item__header--small {
+    font-size: 12px; /* reducir para que quepa en el hexágono */
+    line-height: 1.15;
+}
+.supermercado-item__name {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.supermercado-item__address {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    text-align: center;
+}
+
+.supermercado-item__phone {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+}
+
+.supermercado-item__aliado {
+  margin-top: 14px;
+  display: inline-block;
+  font-family: var(--font-family-heading);
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #244B5A;
+  background: #FFDA00;
+  border-radius: 13px;
+  padding: 6px 36px 6px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15), 0 0 0 4px #fff6a6, 0 1.5px #f9d717 inset;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  position: relative;
+  user-select: none;
+  border: 2.5px solid #c6ac04;
+  /* simula un borde "tinta" sello */
+}
+.supermercado-item__aliado::before {
+  content: "★ "; /* Estrella (puedes cambiar por un icono svg si deseas más realismo) */
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #c6ac04;
+  font-size: 1.25em;
+  font-weight: bold;
+  opacity: .95;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal__content {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .supermercados-list {
+        grid-template-columns: 1fr;
+    }
+
+    .modal__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .modal__header {
+        padding: var(--spacing-sm) var(--spacing-md);
+        margin: 0;
+        width: 100%;
+    }
+
+    .modal__header-title {
+        font-size: var(--font-size-2xl);
+        letter-spacing: 1px;
+    }
+
+    .modal__header-bandera {
+        left: 0;
+    }
+
+    .modal__header-jacinta {
+        height: 100px;
+        max-height: 75%;
+        right: var(--spacing-sm);
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 900px) {
+    .modal__header-jacinta {
+        max-width: 32vw;
+        max-height: 65%;
+        bottom: 8%;
+    }
+    .modal__header-jacinta--animated:hover,
+    .modal__header-jacinta:hover {
+        bottom: 8%;
+    }
+}
+@media (max-width: 600px) {
+    .modal__header-jacinta {
+        max-width: 40vw;
+        max-height: 70%;
+        bottom: 7%;
+    }
+    .modal__header-jacinta--animated:hover,
+    .modal__header-jacinta:hover {
+        bottom: 7%;
+    }
+}
+
+/* Responsivo: en móviles, un poco más contenido */
+@media (max-width: 600px) {
+    .supermercado-item__logo {
+        max-width: 100px;
+    }
+    
+    .supermercado-item__header {
+        font-size: var(--font-size-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+}
+
+/* Variaciones sutiles para que no se muevan todas igual */
+.supermercado-item:nth-child(3n) .supermercado-item__logo img {
+    animation-duration: 4.2s, 7s;
+    animation-delay: 0.2s, 0.4s;
+}
+.supermercado-item:nth-child(3n+1) .supermercado-item__logo img {
+    animation-duration: 3.6s, 6.2s;
+    animation-delay: 0.6s, 0.9s;
+}
+.supermercado-item:nth-child(3n+2) .supermercado-item__logo img {
+    animation-duration: 4.6s, 7.4s;
+    animation-delay: 0.1s, 0.3s;
+}
+
+/* Pausar sutilmente al pasar el cursor sobre la tarjeta */
+.supermercado-item:hover .supermercado-item__logo img {
+    animation-play-state: paused, paused;
+}
+
+/* Animaciones de logos */
+@keyframes logoFloat {
+    0% { transform: translateY(0) translateX(0) rotate(0deg); }
+    25% { transform: translateY(-5px) translateX(2px) rotate(0.6deg); }
+    50% { transform: translateY(-8px) translateX(0) rotate(1.2deg); }
+    75% { transform: translateY(-5px) translateX(-2px) rotate(0.6deg); }
+    100% { transform: translateY(0) translateX(0) rotate(0deg); }
+}
+
+@keyframes logoPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.035); }
+}
+
+/* Accesibilidad: respetar usuarios con reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+    .supermercado-item__logo img {
+        animation: none;
+    }
+}
+
+/* Mejora visual en móvil: aclarar degradado y elevar opacidad del fondo
+   para evitar apariencia de "mancha" demasiado oscura sobre la imagen. */
+@media (max-width: 480px) {
+    /* Las tarjetas pueden ser un poco más compactas en alto */
+    .departamento-card {
+        min-height: 220px;
+        position: relative; /* para overlay full-bleed */
+        overflow: hidden;   /* asegura bordes redondeados */
+    }
+
+    /* Overlay full-width: evita "caja" visible y marcas de degradado */
+    .departamento-card::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.24);
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    /* El contenido queda por encima del overlay y sin fondo propio */
+    .departamento-card__content {
+        background: none !important;
+        background-image: none !important;
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+        padding: 1rem 0.875rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* La imagen de fondo se inyecta con estilo inline (opacity: 0.3);
+       elevamos opacidad en móvil para que no se vea tan "lavada" */
+    .departamento-card .departamento-card__map {
+        opacity: 0.55 !important;
+    }
+}

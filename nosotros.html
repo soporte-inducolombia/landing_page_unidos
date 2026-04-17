@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Conoce la historia de Unidos - Una marca 100% colombiana">
+    <meta name="keywords" content="historia, unidos, colombia, supermercados">
+    <meta name="author" content="Unidos">
+    <meta name="theme-color" content="#009490">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo_unidos.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=2.3">
+    <link rel="stylesheet" href="assets/css/nosotros.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <title>Nosotros - Unidos</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__brand">
+                    <div class="navbar__jacinta">
+                        <a href="index.html">
+                            <img src="assets/images/jasinta_sin_fondo.png" 
+                                 alt="Jacinta" 
+                                 class="navbar__jacinta-img navbar__jacinta--animated"
+                                 data-hover-src="assets/images/jasinta_canasta_sin_fondo.png"
+                                 data-original-src="assets/images/jasinta_sin_fondo.png">
+                        </a>
+                    </div>
+                    <div class="navbar__logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo_unidos.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                    <ul class="navbar__menu" id="navMenu"> 
+                        <li><a href="index.html" class="navbar__link">Inicio</a></li>  
+                        <li><a href="nosotros.html" class="navbar__link">Nosotros</a></li> 
+                        <li><a href="supermercados.html" class="navbar__link">Supermercados</a></li>
+                        <li><a href="contactanos.html" class="navbar__link">Contáctanos</a></li> 
+                        <li><a href="https://byronproducemusic.wixsite.com/unidosestereo" target="_blank" class="navbar__link navbar__link--special">🎤 Unidos Estéreo</a></li> 
+                    </ul>
+                <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="nosotros-hero">
+        <!-- Video de fondo como en el index -->
+        <video class="nosotros-hero__video" autoplay muted loop playsinline>
+            <source src="assets/videos/nosotros.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+        <!-- Overlay para mejorar legibilidad -->
+        <div class="nosotros-hero__overlay"></div>
+        
+        <div class="container nosotros-hero__container">
+            <div class="nosotros-hero__content">
+                <h1 class="nosotros-hero__title">Nosotros</h1>
+                <p class="nosotros-hero__subtitle">Un recorrido de pasión, trabajo y compromiso con Colombia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section__title">¿Quiénes somos?</h2>
+            <div class="video-container">
+                <video 
+                    class="nosotros-video" 
+                    controls 
+                    autoplay 
+                    loop
+                    playsinline
+                    preload="metadata"
+                    aria-label="Video sobre la historia de Unidos"
+                >
+                    <source src="assets/videos/unidos_historia.mp4" type="video/mp4">
+                    <p>Tu navegador no soporta video HTML5. <a href="assets/videos/unidos_historia.mp4">Descarga el video aquí</a>.</p>
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Línea de Tiempo Section -->
+    <section class="timeline-historia-section">
+        <div class="container">
+            <h2 class="section__title">Nuestra Historia en el Tiempo</h2>
+            
+            <div class="timeline-carousel-wrapper">
+                <button class="timeline-nav timeline-nav--prev" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                
+                <div class="timeline-carousel">
+                    <div class="timeline-track">
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2009</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2009.jpg" alt="Unidos 2009" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>En este año nace la asociación de supermercados independientes del eje cafetero ASI-UNIDOS, con la reunión de un grupo de comerciantes que vieron la necesidad de unirse para competir contra las multinacionales que estaban llegando al mercado local. Iniciando con 9 asociados y 19 puntos de venta.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2009</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2009_2.jpg" alt="Unidos 2009" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Con orgullo lanzamos la marca comercial UNIDOS, y en diciembre de 2009, presentamos al mercado nuestro primer producto con marca propia: La Natilla Unidos, un producto que refleja nuestra dedicación y tradición desde el inicio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2010</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2010.jpg" alt="Unidos 2010" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Con gran entusiasmo, anunciamos la apertura de nuestra primera planta de producción de condimentos, plantas medicinales y repostería en la Finca Zaracay, un hito que marca el inicio de una nueva etapa bajo la dirección de nuestro Asociado, Emprender. Este paso refleja nuestro compromiso con la innovación, la calidad y el crecimiento sostenible.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2012</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2012.jpg" alt="Unidos 2012" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Gracias al crecimiento y fortalecimiento de ASI-UNIDOS a lo largo del tiempo, surge la creación de INDUCOLOMBIA S.A.S., nuestra primera plataforma logística de marcas propias. Su objetivo es realizar compras unificadas a proveedores locales, optimizar las entregas directas a los supermercados asociados y facilitar las actividades comerciales, impulsando así la eficiencia y el desarrollo de nuestro sector.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2012</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2012_2.jpg" alt="Unidos 2012" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Nace el Fondo de Empleados de Supermercados Independientes, FONASI, con el propósito de apoyar a los colaboradores de las empresas asociadas en el cumplimiento de sus sueños. A través de créditos con intereses altamente accesibles, FONASI brinda una oportunidad única para que los empleados puedan alcanzar sus metas personales y profesionales, fortaleciendo así el bienestar y el crecimiento dentro de las empresas asociadas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2014</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2014.jpg" alt="Unidos 2014" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Inauguramos el Centro de Distribución de Inducolombia en Mercasa, un espacio estratégico que nos permite recibir los productos de la marca Unidos y gestionar la distribución de pedidos de manera eficiente, garantizando un servicio rápido y seguro que fortalece nuestra red de distribución y mejora la experiencia de nuestros clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2014</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2014_2.jpg" alt="Unidos 2014" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>La Asociación de Supermercados Independientes del Eje Cafetero, ASI-UNIDOS, celebra 5 años de transformar el comercio local con unión, compromiso y crecimiento.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2016</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2016.jpg" alt="Unidos 2016" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Presentamos a nuestra nueva mascota: Jasinta, un nombre inspirado en la Asociación de Supermercados Independientes. Su diseño inicial fue revelado y contó con el respaldo unánime de todos los asociados.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2016</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2016_2.jpg" alt="Unidos 2016" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Ese mismo año se crea el diseño oficial de Jasinta, quien se convierte en la mascota oficial de la marca UNIDOS, representando nuestros valores y apareciendo en algunos de nuestros productos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2017</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2017.jpg" alt="Unidos 2017" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>El 11 de mayo de 2017 marca un hito con la apertura del supermercado Unidos en Viterbo, Caldas. Este espacio no solo ofrecía nuestra marca propia, sino también una amplia variedad de las principales marcas comerciales, consolidándose como un punto de encuentro para calidad, variedad y confianza.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2017</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2017_2.jpg" alt="Unidos 2017" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>El 10 de noviembre de 2017 lanzamos nuestra segunda marca propia, P'Ahorrar, diseñada para ofrecer precios más económicos sin comprometer la calidad. Una opción inteligente que combina ahorro y excelencia en cada producto.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2018</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2018.jpg" alt="Unidos 2018" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Realizamos una actualización de los logos de nuestras marcas propias, UNIDOS y P'Ahorrar, incorporando un diseño más moderno y atractivo que refuerza su identidad y conexión con nuestros clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2021</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2021.jpg" alt="Unidos 2021" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Iniciamos la construcción de nuestra bodega de almacenamiento de granos y nuestra segunda planta de producción de granos, un proyecto que fortalece nuestra capacidad logística y garantiza productos frescos y de calidad para nuestros clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2022.jpg" alt="Unidos 2022" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>ASI-Unidos evoluciona y da paso a un nuevo capítulo: la transformación en un gremio que unifica el Fondo de Empleados FONASI y la plataforma logística comercial de marcas propias bajo la razón social de Inducolombia S.A.S., consolidando nuestra visión de crecimiento y fortaleza.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2022_2.jpg" alt="Unidos 2022" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>El 4 de julio de 2022 marcó un nuevo hito con la inauguración de nuestra bodega de almacenamiento de granos y la apertura de nuestra segunda planta de producción, fortaleciendo nuestra capacidad para ofrecer productos de calidad y atender la creciente demanda de nuestros clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2023.jpg" alt="Unidos 2023" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Actualizamos nuestro manual de marca e identidad corporativa de Unidos, rediseñando la presentación para iniciar con la actualización de nuetro portafolio con 500 referencias.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-line"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="assets/images/2024.jpg" alt="Unidos 2024" loading="lazy">
+                                </div>
+                                <div class="timeline-text">
+                                    <p>Celebramos 15 años de hacer realidad nuestro sueño: permanecer UNIDOS en el tiempo ofreciendo productos de calidad al precio justo. Hoy contamos con 75 puntos de venta en 6 departamentos y más de 500 referencias en nuestro portafolio, llevando excelencia y confianza a cada rincón donde estamos presentes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <button class="timeline-nav timeline-nav--next" aria-label="Siguiente">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="timeline-dots"></div>
+        </div>
+    </section>
+
+    <!-- Valores Section -->
+    <section class="valores-section">
+        <div class="container">
+            <div class="valores-grid">
+                <div class="valor-card">
+                    <div class="valor-icon">
+                        <img src="assets/images/mision.png" alt="Misión">
+                    </div>
+                    <h3>Misión</h3>
+                    <p>Trabajamos UNIDOS para progresar.</p>
+                </div>
+
+                <div class="valor-card">
+                    <div class="valor-icon">
+                        <img src="assets/images/vision.png" alt="Visión">
+                    </div>
+                    <h3>Visión</h3>
+                    <p>Fortalecer los supermercados accionistas para el desarrollo y bienestar de nuestra gente.</p>
+                </div>
+
+                <div class="valor-card">
+                    <div class="valor-icon">
+                        <img src="assets/images/valores.png" alt="Valores Corporativos">
+                    </div>
+                    <h3>Valores Corporativos</h3>
+                    <p>Transparencia y confianza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo Section -->
+    <section class="equipo-section">
+        <div class="container">
+            <h2 class="section__title">Nuestro Equipo</h2>
+            <p class="section__subtitle">Conoce al equipo que hace posible que <strong>UNIDOS</strong> llegue a los hogares colombianos.</p>
+            
+            <div class="equipo-grid">
+                <div class="equipo-card">
+                    <div class="equipo-image">
+                        <img src="assets/images/equipo1.jpg" alt="Equipo de Producción" loading="lazy">
+                    </div>
+                    <h3>Equipo de Producción</h3>
+                    <p>"Trabajamos en conjunto para que cada uno de los productos que lleguen a tus manos transmita la pasión por lo que hacemos"</p>
+                </div>
+
+                <div class="equipo-card">
+                    <div class="equipo-image">
+                        <img src="assets/images/equipo2.jpg" alt="Equipo Logístico" loading="lazy">
+                    </div>
+                    <h3>Equipo Logístico</h3>
+                    <p>"Unidos somos más fuertes, por eso nos alineamos para cumplir con los estándares de calidad de nuestros procesos logísticos, brindando tranquilidad a nuestros clientes"</p>
+                </div>
+
+                <div class="equipo-card">
+                    <div class="equipo-image">
+                        <img src="assets/images/equipo3.jpg" alt="Equipo de Administración" loading="lazy">
+                    </div>
+                    <h3>Equipo de Administración</h3>
+                    <p>"Nos caracterizamos por el compromiso, la comunicación y el trabajo en equipo, estos valores son los pilares para cumplir con nuestros objetivos"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Fila superior: Iconos de navegación -->
+                <div class="footer__nav-row">
+                    <nav class="footer__nav" aria-label="Navegación principal del pie de página">
+                    <a href="index.html" class="footer__nav-icon" title="Inicio" aria-label="Inicio">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7"/>
+                            <path d="M9 22V12h6v10"/>
+                        </svg>
+                    <a href="nosotros.html" class="footer__nav-icon" title="Nosotros" aria-label="Nosotros">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M4 4v15.5"/>
+                            <path d="M8 4h12v13H6.5A2.5 2.5 0 0 0 4 19.5"/>
+                        </svg>
+                    </a>
+                    </a>
+                    <a href="supermercados.html" class="footer__nav-icon" title="Supermercados" aria-label="Supermercados">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 12.39a2 2 0 0 0 2 1.61h7.72a2 2 0 0 0 2-1.61L21 6H6"/>
+                        </svg>
+                    </a>
+                    <a href="contactanos.html" class="footer__nav-icon" title="Contáctanos" aria-label="Contáctanos">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.06.96.27 1.9.62 2.79a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.35 1.83.56 2.79.62A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </a>
+                    </nav>
+                </div>
+                
+                <!-- Fila inferior: Iconos sociales y teléfono -->
+                <div class="footer__social-row">
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/unidos.pahorrar" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/unidos.ganamostodos/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    <!--<a href="" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </a>-->
+                    </div>
+                    <div class="footer__contact-header">
+                        <a href="tel:+576063204121" class="footer__phone">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            606 320 4121
+                        </a>
+                    </div>
+                    <p class="footer__tagline footer__tagline--unidos">UNIDOS ganamos todos</p>
+                    <p class="footer__tagline">Una marca 100% colombiana</p>
+                </div>
+                
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Unidos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js?v=2.3"></script>
+    <script src="assets/js/timeline.js"></script>
+</body>
+</html>

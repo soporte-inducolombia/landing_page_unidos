@@ -1,0 +1,197 @@
+aceite_girasol_unidos_x3000ml.png	Aceites y grasas
+atun_en_aceite_girasol_tripack_unidos_x240gr_cx20.png	Aceites y grasas
+lomitos_de_atun_en_aceite_de_girasol_unidos_x160g.png	Aceites y grasas
+margarina_edicion_especial_x1000gr.png	Aceites y grasas
+margarina_en_barra_unidos_x125gr_cx80.png	Aceites y grasas
+margarina_unidos_x1000g.png	Aceites y grasas
+margarina_unidos_x250gr.png	Aceites y grasas
+mayonesa_unidos_x380gr.png	Aceites y grasas
+mayonesa_unidos_x200gr.png	Aceites y grasas
+aceite_soya_900ml.png	Aceites y grasas
+aceite_soya_500ml.png	Aceites y grasas
+aceite_soya_250ml.png	Aceites y grasas
+aceite_soya_2000ml.png	Aceites y grasas
+aceite_soya_1000ml.png	Aceites y grasas
+aceite_oliva_500.png	Aceites y grasas
+aceite_oliva_1000.png	Aceites y grasas
+aceite_soya_unidos_x3000ml_cx6.png	Aceites y grasas
+toallas_humedas_antibacterial_max_amarillo_dampy_x120und_cx15.jpg	Aseo personal
+jabon_corporal_amatic_frutal_300ml.png	Aseo personal
+jabon_liquido_manos_frutos_rojos_unidos_2000.png	Aseo personal
+jabon_liquido_frutos_rojos_x2000.png	Aseo personal
+jabon_liquido_frutos_rojos_x1000.png	Aseo personal
+jabon_corporal_amatic_frutal_750ml.png	Aseo personal
+copitos_algodon_unidos.png	Aseo personal
+jabon_barra_azul_unidos.png	Aseo personal
+cafe_unidos_x500g.png	Bebidas
+atun_en_agua_unidos_x170gr_cx48.png	Bebidas
+cafe_liofilizado_unidos_x85g.png	Bebidas
+agua_pura_unidos_x1000.png	Bebidas
+agua_pura_unidos_600.png	Bebidas
+galleta_salada_unidos_x460gr_cx24.png	Condimentos y especias
+comino_entero_unidos_x_15_gr.png	Condimentos y especias
+color_unidos_x60g.png	Condimentos y especias
+color_unidos_x20g.png	Condimentos y especias
+color_unidos_x100g.png	Condimentos y especias
+color_curcuma_unidos_x20g.png	Condimentos y especias
+canela_molida_unidos_x10g.png	Condimentos y especias
+canela_extralarga_x30g.png	Condimentos y especias
+mani_salado_unidos_x50gr.png	Condimentos y especias
+paprika_molida_unidos_x20gr_px12.png	Condimentos y especias
+pimienta_molida_unidos_x_60gr.png	Condimentos y especias
+laurel_en_hojas_unidos_x_8gr.png	Condimentos y especias
+tomillo_molido_unidos_x_15gr.png	Condimentos y especias
+adobo_parrilla__unidos_x_60gr.png	Condimentos y especias
+sal_unidos_x500g.png	Condimentos y especias
+sal_unidos_x1000g.png	Condimentos y especias
+salsa_de_tomate_unidos_x200gr_cx24.png	Condimentos y especias
+salsa_de_tomate_unidos_400.png	Condimentos y especias
+duraznos_en_almibar_la_perla.png	Conservas y enlatados
+sardina_unidos_x155g.png	Conservas y enlatados
+galletas_doradas_unidos_3_tacos.png	Dulces y postres
+galletas_doradas_unidos_x270.png	Dulces y postres
+cucas_unidos.png	Dulces y postres
+bocadillo_azucarado_unidos_x350g.png	Dulces y postres
+bocadillo_veleño_unidos_24.png	Dulces y postres
+bocadillo_veleño_x650gr.png	Dulces y postres
+galletas_de_navidad_caseritas_x130g_(1).png	Dulces y postres
+bocadillo_unidos_24.png	Dulces y postres
+natilla_tradicional_unidos_x200g_(2).png	Dulces y postres
+natilla_de_maracuya_unidos_x200g_(3).png	Dulces y postres
+bocadillo_veleño_unidos_16.png	Dulces y postres
+bocadillo_veleño_unidos_12.png	Dulces y postres
+arequipe_unidos_200.png	Dulces y postres
+uva_pasas_unidos_x200.png	Frutas y frutos secos
+arándanos_deshidratados_unidos_x_100.png	Frutas y frutos secos
+almendra_laminada_unidos_x_100.png	Frutas y frutos secos
+mani_tostado_unidos_x50g.png	Frutas y frutos secos
+mani_con_uvas_pasas_2_x_50gr.png	Frutas y frutos secos
+mani_con_ajonjoli_unidos_x50g.png	Frutas y frutos secos
+coco_deshidratado_unidos_x_200gr_(1).png	Frutas y frutos secos
+mani_dulce_unidos_x50gr.png	Frutas y frutos secos
+arroz_unidos_x500gr.png	Granos y cereales
+arroz_unidos_5000.png	Granos y cereales
+jabón_avena_unidos_2000.png	Granos y cereales
+jabón_avena_unidos_500.png	Granos y cereales
+quinua_unidos_x_100_.png	Granos y cereales
+avenas.png	Granos y cereales
+hojuelas_de_maiz_naturales_unidos__x_200_(1).png	Granos y cereales
+avena_instantanea_fresa_unidos_x200gr_cx36.png	Granos y cereales
+linaza_unidos_x_100_.png	Granos y cereales
+maiz_comun_unidos_3000.png	Granos y cereales
+javon_liquido_avena_unidos_x1000.png	Granos y cereales
+avena_instantanea_vainilla_unidos_x200gr_cx36.png	Granos y cereales
+avena_hojuelas_unidos_x250gr_px48.png	Granos y cereales
+cereal_hojuelas_azucardas_x_500gr.png	Granos y cereales
+cereal_granola_unidos_x300.png	Granos y cereales
+cereal_chobolitas_unidos_x200gr_cx24.png	Granos y cereales
+cereal_aros_frutales_500.png	Granos y cereales
+cereal_arroz_achocolatado_unidos_x_200_gr_(1).png	Granos y cereales
+cereal_lonchera_unidos.png	Granos y cereales
+cereal_lonchera_x_6_unidos.png	Granos y cereales
+limpiapisos_unidos_brisa_marina_2000.png	Limpieza del hogar
+limpiapisos_floral_unidos_x2000.png	Limpieza del hogar
+limpiapisos_unidos_vainilla_x1000.png	Limpieza del hogar
+limpiapisos_desinfectante_lavanda_unidos_x1000ml.png	Limpieza del hogar
+bolsa_papelera_blanca_unidos_43x45cm_10_unds_cx40.png	Limpieza del hogar
+limpiapisos_citronela_unidos_x1000.png	Limpieza del hogar
+detergente_ropa_oscura.png	Limpieza del hogar
+limpiapisos_canela_unidos_2_x1000.png	Limpieza del hogar
+limpiapisos_unidos_canela_2000.png	Limpieza del hogar
+limpiapisos_unidos_floral_1000.png	Limpieza del hogar
+detergente_unidos_2800.png	Limpieza del hogar
+bolsa_basura_unidos_industrial.png	Limpieza del hogar
+blanqueador_desinfectante_unidos_x2000ml.png	Limpieza del hogar
+blanqueador_floral_x3800ml.png	Limpieza del hogar
+blanqueador_limon_unidos_2000.png	Limpieza del hogar
+blanqueador_ropa_color_unidos_x1000.png	Limpieza del hogar
+blanqueador_ropa_color_unidos_x2000ml.png	Limpieza del hogar
+quitamanchas_unidos.png	Limpieza del hogar
+bolsas_basura_negra_50_x_65_unidos_6_unds.png	Limpieza del hogar
+limpiapisos_brisa_marina_unidos_x2000.png	Limpieza del hogar
+bolsas_para_basura_blancas_papelera_10_unds_.png	Limpieza del hogar
+bolsas_para_basura_verdes_casera_6_unds.png	Limpieza del hogar
+bolsas_para_basura_verdes_industrial_5_unds.png	Limpieza del hogar
+bolsas_para_basura_verdes_papelera_10_unds.png	Limpieza del hogar
+bolsas_patojito_aroma_vainilla.png	Limpieza del hogar
+bolsas_zipper_unidos_18x20cm_x20und_(1).png	Limpieza del hogar
+bolsas_zipper_unidos_x15x17cm_x30und_(1).png	Limpieza del hogar
+bolsa_basura_unidos_casera.png	Limpieza del hogar
+bolsas_para_basura_negras_industrial_5_unds.png	Limpieza del hogar
+lavaloza_unidos_limón_1000.png	Limpieza del hogar
+limpiapisos_canela_unidos_x3000ml_cx6.png	Limpieza del hogar
+lavaloza_pahorrar_limon_500.png	Limpieza del hogar
+detergente_en_polvo_unidos_x2800gr.png	Limpieza del hogar
+detergente_en_polvo_unidos_x500gr_(1).png	Limpieza del hogar
+detergente_floral_unidos_2000.png	Limpieza del hogar
+lavaloza_unidos_chicle_1000.png	Limpieza del hogar
+esponjillas_unidos_x_6.png	Limpieza del hogar
+detergente_liquido_floral_unidos_x4000ml_cx4.png	Limpieza del hogar
+kit_apartamento_bolsas_unidos.png	Limpieza del hogar
+lavaloza_crema_limon_x250gr.png	Limpieza del hogar
+lavaloza_en_gel_chicle_unidos_x350g.png	Limpieza del hogar
+lavaloza_en_gel_limon_unidos_x350g.png	Limpieza del hogar
+lavaloza_en_gel_uva_unidos_x350g.png	Limpieza del hogar
+lavaloza_limon_unidos_3080ml.jpeg	Limpieza del hogar
+lavaloza_liquido_frutos_rojos_unidos_x500ml.png	Limpieza del hogar
+lavaloza_liquido_limon_unidos_3080ml.png	Limpieza del hogar
+lavaloza_chicle_unidos_500.png	Limpieza del hogar
+detergente_en_polvo_unidos_x1000gr_(1).png	Limpieza del hogar
+lavaloza_liquido_limon_unidos_x1000.png	Limpieza del hogar
+leche_galatea_x6_x900_(1).png	Lácteos
+leche_entera_uht_galatea_x900ml.jpeg	Lácteos
+leche_deslactosada_uht_galatea_x900ml.jpeg	Lácteos
+queso_doble_crema_x_245g.png	Lácteos
+queso_doble_crema_x200g.png	Lácteos
+queso_doble_crema_unidos_x500g.png	Lácteos
+leche_galatea_x6_x900.png	Lácteos
+leche_polvo_unidos_azucarada_800.png	Lácteos
+queso_doble_crema_unidos_x400g.png	Lácteos
+leche_uht_deslactosada_unidos_x1100ml_c3x6_2.png	Lácteos
+leche_uht_deslactosada_unidos_x_1100_ml.png	Lácteos
+leche_uht_entera_unidos_x1100_ml.png	Lácteos
+leche_uht_entera_unidos_x900ml.png	Lácteos
+leche_unidos_entera_x6_x1100.png	Lácteos
+leche_unidos_entera_x6_x900.png	Lácteos
+queso_doble_crema_unidos_x495.png	Lácteos
+leche_en_polvo_unidos_x_380.png	Lácteos
+vinagre_de_manzana_unidos_x_500ml_(1).png	Otros
+vinagre_blanco_x_3000.png	Otros
+fécula_de_plátano_natural_unidos_200.png	Otros
+sardna_oval_unidos_x425g.png	Otros
+azúcar_500g.png	Otros
+azúcar_2500gr.png	Otros
+unidos_papel_higiénico_12.png	Otros
+azúcar_1000g.png	Otros
+vinagre_blanco_x1000.png	Otros
+vinagre_blanco_x500.png	Otros
+fécula_de_plátano_vainilla_unidos_200.png	Otros
+semilla_de_chía_unidos__x_100__(1).png	Otros
+img_8662.png	Otros
+papel_higiénico_unidos_12.png	Otros
+lavaplatos_crema_unidos_500.png	Otros
+limoncillo_unidos_x_15_gr.png	Otros
+kit_de_aseo_(1).png	Otros
+arrox_unidos_x25.png	Otros
+cerar_aros_frutales_unidos_x180.png	Otros
+caldo_de_gallina_8_cubos_unidos_x92gr.png	Otros
+caldo_de_costilla_8_cubos_unidos_x92gr.png	Otros
+jengibre__unidos_20gr.png	Otros
+cúrcuma_molida_unidos_x_50.png	Otros
+descuentos_azucar_unidos_27122024.jpg	Otros
+maní_ajonjoli__50.png	Otros
+cúrcuma_molida_unidos_x_50_(1).png	Otros
+vinagre_manzana_unidos_x250ml.png	Otros
+anis_estrella_unidos_10gr.png	Otros
+ajonjolí_unidos_x_100.png	Otros
+img_0447.png	Otros
+imagen_de_whatsapp_2024-11-19_a_las_08.47.28_632022ce.jpg	Otros
+imagen_de_whatsapp_2024-11-19_a_las_08.47.28_5b15ea12.jpg	Otros
+imagen_de_whatsapp_2024-11-18_a_las_10.11.09_808dffc7.jpg	Otros
+papel_higiénico_6.png	Otros
+maní_dulce_50.png	Otros
+whatsapp_image_2024-10-23_at_8.12.02_am.jpeg	Otros
+super_combo_panadería_unidos_1000.png	Panadería
+tostadas_unidos_x10und_cx23.png	Panadería
+pan_hamburguesa_unidos_x_500.png	Panadería
+pan_redondo_unidos_x15und_x315g.png	Panadería

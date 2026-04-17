@@ -1,0 +1,488 @@
+/* Estilos para la página de Contáctanos */
+
+/* Header transparente sobre el video; sólido al hacer scroll */
+.header {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: var(--shadow-md);
+}
+
+/* Colores del navbar según estado */
+.header:not(.scrolled) .navbar__link {
+    color: #fff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.header.scrolled .navbar__link {
+    color: var(--color-text-primary) !important;
+    text-shadow: none !important;
+}
+
+.header:not(.scrolled) .navbar__link:hover {
+    color: var(--color-accent) !important;
+}
+
+.header.scrolled .navbar__link:hover {
+    color: var(--color-primary) !important;
+}
+
+.header:not(.scrolled) .navbar__toggle span {
+    background-color: #fff !important;
+}
+
+.header.scrolled .navbar__toggle span {
+    background-color: var(--color-text-primary) !important;
+}
+
+.page-hero {
+    /* Igual que index/nosotros: video de fondo */
+    margin-top: 0;
+    padding-top: calc(var(--spacing-2xl) + 70px);
+    padding-bottom: var(--spacing-lg);
+    position: relative;
+    min-height: 387px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: white;
+    text-align: center;
+}
+
+/* Video y overlay del hero */
+.page-hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.page-hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.page-hero__container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero__title {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.page-hero__subtitle {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xl);
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Contact Content */
+.contact-content {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--color-background-light);
+}
+
+.contact-content__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: start;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: var(--color-background);
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 90px;
+}
+
+.faq-section__title {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text-primary);
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--color-background-dark);
+    padding-bottom: var(--spacing-md);
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.faq-item__question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: var(--spacing-md);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all var(--transition-fast);
+    border-radius: var(--border-radius-md);
+}
+
+.faq-item__question:hover {
+    background-color: var(--color-background-light);
+    color: var(--color-primary);
+}
+
+.faq-item__icon {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    transition: transform var(--transition-base);
+    flex-shrink: 0;
+    margin-left: var(--spacing-md);
+}
+
+.faq-item__question.active .faq-item__icon {
+    transform: rotate(45deg);
+}
+
+.faq-item__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-base) ease-out, padding var(--transition-base);
+    padding: 0 var(--spacing-md);
+}
+
+.faq-item__answer.active {
+    max-height: 500px;
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-lg);
+}
+
+.faq-item__answer p {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Form Section */
+.form-section {
+    background-color: var(--color-background);
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.form-section__title {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+}
+
+.form-section__subtitle {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.contact-form {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.form__group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form__label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-base);
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 2px solid var(--color-background-dark);
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-body);
+    transition: all var(--transition-fast);
+    background-color: var(--color-background);
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form__textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form__note {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-md);
+}
+
+/* Contact Info */
+.contact-info {
+    padding-top: var(--spacing-xl);
+    border-top: 2px solid var(--color-background-dark);
+}
+
+.contact-info h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-primary);
+}
+
+.contact-info__item {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    background-color: var(--color-background-light);
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+.contact-info__item strong {
+    color: var(--color-text-primary);
+    margin-right: var(--spacing-sm);
+}
+
+/* Botón */
+.btn--primary {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    border: none;
+    padding: var(--spacing-md) var(--spacing-2xl);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+}
+
+.btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-secondary-dark));
+}
+
+.btn--block {
+    width: 100%;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .page-hero {
+        min-height: 320px;
+        margin-top: 0;
+        padding-top: calc(var(--spacing-xl) + 70px);
+        padding-bottom: var(--spacing-md);
+    }
+
+    .contact-content__grid {
+        gap: var(--spacing-2xl);
+    }
+
+    .faq-section {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Asegurar el mismo menú móvil que index/nosotros */
+    .navbar__menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: var(--spacing-2xl);
+        box-shadow: none;
+        transition: left var(--transition-base);
+        z-index: var(--z-index-dropdown);
+    }
+
+    .navbar__menu.active {
+        left: 0;
+    }
+
+    /* Colores y efectos de enlaces dentro del menú móvil */
+    .navbar__menu .navbar__link {
+        position: relative;
+        color: #244B5A !important;
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-semibold);
+        padding: var(--spacing-md) var(--spacing-lg);
+        width: 100%;
+        text-align: center;
+        border-bottom: none;
+        animation: breathe 3s ease-in-out infinite;
+        text-shadow:
+            0 2px 4px rgba(0,0,0,0.25),
+            0 0 10px rgba(36, 75, 90, 0.45),
+            0 0 16px rgba(0, 148, 144, 0.35);
+        transition: all var(--transition-base);
+        transform-origin: center;
+    }
+
+    .navbar__menu .navbar__link:hover {
+        color: #244B5A !important;
+        background-color: transparent;
+        border-radius: var(--border-radius-md);
+        animation: breatheHover 2s ease-in-out infinite;
+        text-shadow:
+            0 3px 8px rgba(0,0,0,0.3),
+            0 0 22px rgba(36, 75, 90, 0.6),
+            0 0 28px rgba(0, 148, 144, 0.5);
+    }
+    
+    /* Asegurar color en todos los estados */
+    .navbar__menu .navbar__link:visited,
+    .navbar__menu .navbar__link:active,
+    .navbar__menu .navbar__link:focus {
+        color: #244B5A !important;
+    }
+
+    .navbar__menu .navbar__link::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--color-primary), var(--color-accent), var(--color-primary));
+        background-size: 200% 100%;
+        transition: width 0.4s ease;
+        animation: shimmer 2s linear infinite;
+        border-radius: 2px;
+        opacity: 1;
+    }
+
+    .navbar__menu .navbar__link:hover::after {
+        width: 95%;
+    }
+
+    .page-hero {
+        min-height: 300px;
+        padding-top: calc(var(--spacing-lg) + 70px);
+        padding-bottom: var(--spacing-md);
+    }
+
+    .page-hero__title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .page-hero__subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .contact-content__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .faq-section,
+    .form-section {
+        padding: var(--spacing-lg);
+    }
+
+    .faq-section__title,
+    .form-section__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .faq-item__question {
+        font-size: var(--font-size-base);
+        padding: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        min-height: 280px;
+        padding-top: calc(var(--spacing-md) + 70px);
+        padding-bottom: var(--spacing-sm);
+    }
+
+    .page-hero__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .faq-section__title,
+    .form-section__title {
+        font-size: var(--font-size-xl);
+    }
+
+    .contact-content {
+        padding: var(--spacing-2xl) 0;
+    }
+}
+
+/* Fondo exclusivo para la sección de contacto (solo imagen de fondo) */
+.contact-content--bg-only {
+    /* Imagen de fondo centrada y a pantalla completa del área */
+    background: url('../images/fondo.jpg') center / cover no-repeat fixed;
+    /* Mantener el padding definido en .contact-content para respetar el layout */
+    /* Altura mínima para que sea visible aun con poco contenido */
+    min-height: 70vh;
+}

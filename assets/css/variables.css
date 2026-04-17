@@ -1,0 +1,113 @@
+/* Variables CSS - Colores, Fuentes y Espaciados */
+
+/* Importar fuentes */
+@import url('https://fonts.cdnfonts.com/css/foco');
+
+:root {
+    /* Colores Principales - 60% para Fondos y grandes superficies */
+    --color-primary: #009490;        /* Verde azulado - Color principal */
+    --color-primary-dark: #007370;   /* Verde azulado oscuro */
+    --color-primary-light: #00B5B0;  /* Verde azulado claro */
+    
+    /* Colores Secundarios - 30% para Complemento en elementos de diseño y textos */
+    --color-secondary: #244B5A;      /* Azul oscuro - Complemento */
+    --color-secondary-dark: #1a3540; /* Azul más oscuro */
+    --color-secondary-light: #2e5f72; /* Azul medio */
+    
+    /* Color de Acento - 10% para Detalles que necesiten alto contraste */
+    --color-accent: #FFDA00;         /* Amarillo - Alto contraste */
+    --color-accent-dark: #E6C400;    /* Amarillo oscuro */
+    --color-accent-light: #FFED4E;   /* Amarillo claro */
+    
+    /* Colores de Texto */
+    --color-text-primary: #244B5A;   /* Azul oscuro para textos principales */
+    --color-text-secondary: #4b5563;
+    --color-text-light: #6b7280;
+    
+    /* Colores de Fondo */
+    --color-background: #ffffff;     /* Blanco */
+    --color-background-light: #e6f7f7; /* Verde azulado muy claro */
+    --color-background-dark: #ccefee;  /* Verde azulado claro */
+    
+    /* Colores de Estado */
+    --color-success: #10b981;
+    --color-error: #ef4444;
+    --color-warning: #f59e0b;
+    --color-info: #3b82f6;
+    
+    /* Fuentes */
+    /* FOCO BOLD - Para encabezados y títulos de productos */
+    --font-family-heading: 'Foco', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    
+    /* Century Gothic Regular - Para textos largos e información complementaria */
+    --font-family-body: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+    
+    /* Fuentes adicionales */
+    --font-family-primary: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+    --font-family-secondary: 'Foco', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-family-mono: 'Courier New', monospace;
+    
+    /* Tamaños de Fuente */
+    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-sm: 0.875rem;     /* 14px */
+    --font-size-base: 1rem;       /* 16px */
+    --font-size-lg: 1.125rem;     /* 18px */
+    --font-size-xl: 1.25rem;      /* 20px */
+    --font-size-2xl: 1.5rem;      /* 24px */
+    --font-size-3xl: 1.875rem;    /* 30px */
+    --font-size-4xl: 2.25rem;     /* 36px */
+    --font-size-5xl: 3rem;        /* 48px */
+    --font-size-6xl: 4rem;        /* 64px */
+    --font-size-7xl: 5rem;        /* 80px */
+    
+    /* Pesos de Fuente */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Espaciados */
+    --spacing-xs: 0.25rem;    /* 4px */
+    --spacing-sm: 0.5rem;     /* 8px */
+    --spacing-md: 1rem;       /* 16px */
+    --spacing-lg: 1.5rem;     /* 24px */
+    --spacing-xl: 2rem;       /* 32px */
+    --spacing-2xl: 3rem;      /* 48px */
+    --spacing-3xl: 4rem;      /* 64px */
+    --spacing-4xl: 6rem;      /* 96px */
+    
+    /* Bordes */
+    --border-radius-sm: 0.25rem;   /* 4px */
+    --border-radius-md: 0.5rem;    /* 8px */
+    --border-radius-lg: 0.75rem;   /* 12px */
+    --border-radius-xl: 1rem;      /* 16px */
+    --border-radius-full: 9999px;
+    
+    /* Sombras */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Transiciones */
+    --transition-fast: 150ms ease-in-out;
+    --transition-base: 300ms ease-in-out;
+    --transition-slow: 500ms ease-in-out;
+    
+    /* Tamaños de Contenedor */
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1536px;
+    
+    /* Z-index */
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal-backdrop: 1040;
+    --z-index-modal: 1050;
+    --z-index-popover: 1060;
+    --z-index-tooltip: 1070;
+}

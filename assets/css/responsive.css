@@ -1,0 +1,443 @@
+/* Responsive Design - Media Queries */
+
+/* Tablets y dispositivos medianos (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .section__title {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .hero {
+        min-height: 320px; /* más compacto en tablet */
+        margin-top: 0;
+        padding-top: calc(var(--spacing-xl) + 70px);
+        padding-bottom: var(--spacing-md);
+    }
+    
+    .hero__title {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .hero__subtitle {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .hero .container,
+    .about .container {
+        gap: var(--spacing-2xl);
+    }
+    
+    .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .feature-card {
+        min-height: 300px;
+    }
+
+    /* Instagram sección en tablet - sin recortes */
+    .instagram-row {
+        overflow: visible; /* permitir que se vea todo el contenido */
+        max-width: 100%;
+    }
+
+    .instagram-row__iframe {
+        height: 400px; /* altura más cómoda en tablet */
+        width: 100% !important; /* ancho completo adaptable */
+        max-width: 900px; /* límite máximo */
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .instagram-feed {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets pequeñas (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Navegación móvil - Fondo totalmente transparente */
+    .navbar__menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+    background: rgba(255, 255, 255, 0.85); /* 85% opacidad */
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: var(--spacing-2xl);
+        box-shadow: none;
+        transition: left var(--transition-base);
+        z-index: var(--z-index-dropdown);
+    }
+    
+    .navbar__menu.active {
+        left: 0;
+    }
+    
+    /* Enlaces del menú móvil - mismas animaciones del escritorio */
+    .navbar__menu .navbar__link {
+        position: relative;
+        color: #244B5A !important; /* nuevo color solicitado */
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-semibold);
+        padding: var(--spacing-md) var(--spacing-lg);
+        width: 100%;
+        text-align: center;
+        border-bottom: none;
+        /* Reutiliza animación del escritorio */
+        animation: breathe 3s ease-in-out infinite;
+        text-shadow:
+            0 2px 4px rgba(0,0,0,0.25),
+            0 0 10px rgba(36, 75, 90, 0.45),
+            0 0 16px rgba(0, 148, 144, 0.35);
+        transition: all var(--transition-base);
+        transform-origin: center;
+    }
+    
+    .navbar__menu .navbar__link:hover {
+        color: #244B5A !important; /* mantener nuevo color en hover */
+        background-color: transparent;
+        border-radius: var(--border-radius-md);
+        /* Animación intensa igual que escritorio */
+        animation: breatheHover 2s ease-in-out infinite;
+        text-shadow:
+            0 3px 8px rgba(0,0,0,0.3),
+            0 0 22px rgba(36, 75, 90, 0.6),
+            0 0 28px rgba(0, 148, 144, 0.5);
+    }
+    
+    .navbar__menu .navbar__link::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%; /* visible por defecto como en la imagen */
+        height: 3px;
+        background: linear-gradient(90deg, var(--color-primary), var(--color-accent), var(--color-primary));
+        background-size: 200% 100%;
+        transition: width 0.4s ease;
+        animation: shimmer 2s linear infinite;
+        border-radius: 2px;
+        opacity: 1;
+    }
+    
+    .navbar__menu .navbar__link:hover::after {
+        width: 95%;
+    }
+    
+    /* Mantener estilo especial para "Unidos Estéreo" en móvil */
+    .navbar__menu .navbar__link--special {
+        margin-top: var(--spacing-md);
+        border-bottom: none;
+        background: linear-gradient(135deg, var(--color-accent) 0%, #FFE44D 100%);
+        color: var(--color-secondary) !important;
+        padding: var(--spacing-md) var(--spacing-xl);
+        border-radius: 50px;
+        font-weight: var(--font-weight-bold);
+        animation: breathe 3s ease-in-out infinite;
+        box-shadow: 0 4px 15px rgba(255, 218, 0, 0.3);
+    }
+    
+    .navbar__menu .navbar__link--special:hover {
+        background: linear-gradient(135deg, var(--color-primary) 0%, #00B5B0 100%);
+        transform: scale(1.08);
+        animation: breatheHover 2s ease-in-out infinite;
+        box-shadow: 0 6px 25px rgba(0, 148, 144, 0.4);
+    }
+    /* Se eliminan animaciones móviles personalizadas para usar las del escritorio */
+    
+    .navbar__toggle {
+        display: flex;
+    }
+    
+    .navbar__toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+    
+    .navbar__toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .navbar__toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    /* Hero Section */
+    .hero {
+        min-height: 300px;
+        margin-top: 0;
+        padding-top: calc(var(--spacing-lg) + 70px);
+        padding-bottom: var(--spacing-md);
+    }
+    
+    .hero .container,
+    .hero__container {
+        padding: 0 var(--spacing-lg);
+    }
+    
+    .hero__video {
+        object-fit: cover;
+    }
+    
+    .hero__slogan {
+        font-size: var(--font-size-xl);
+        bottom: var(--spacing-lg);
+        right: var(--spacing-lg);
+        padding: var(--spacing-sm) var(--spacing-md);
+        white-space: nowrap;
+    }
+    
+    .hero__buttons {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .hero__buttons .btn {
+        width: 100%;
+    }
+    
+    .hero__image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .hero__image img {
+        max-width: 450px;
+    }
+    
+    .navbar__jacinta img {
+        height: 65px;
+    }
+    
+    .navbar__logo img {
+        height: 60px;
+    }
+    
+    .navbar__link {
+        font-size: var(--font-size-lg);
+    }
+    
+    /* Features Grid */
+    .features__intro {
+        font-size: var(--font-size-xl);
+    }
+    
+    .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .feature-card {
+        min-height: 280px;
+    }
+    
+    .instagram-section__title {
+        font-size: var(--font-size-2xl);
+        flex-direction: column;
+    }
+    
+    .instagram-feed {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+    
+    /* About Section */
+    .about .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about__image {
+        order: -1;
+    }
+    
+    /* Footer */
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .footer__brand {
+        align-items: center;
+    }
+    
+    .footer__social {
+        justify-content: center;
+    }
+    
+    .footer__nav {
+        align-items: center;
+    }
+    
+    /* Secciones */
+    section {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .section__title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .section__subtitle {
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* Móviles (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .hero {
+        min-height: 280px;
+        margin-top: 0;
+        padding-top: calc(var(--spacing-md) + 70px);
+        padding-bottom: var(--spacing-sm);
+    }
+    
+    .hero__container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .hero__slogan {
+        font-size: var(--font-size-base);
+        bottom: var(--spacing-md);
+        right: var(--spacing-md);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        white-space: nowrap;
+    }
+    
+    .navbar__jacinta img {
+        height: 55px;
+    }
+    
+    .navbar__logo img {
+        height: 55px;
+    }
+    
+    .navbar__brand {
+        gap: var(--spacing-sm);
+    }
+    
+    .section__title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .features__intro {
+        font-size: var(--font-size-lg);
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .features__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .feature-card,
+    .contact__form {
+        padding: var(--spacing-lg);
+    }
+    
+    .feature-card {
+        min-height: 280px;
+    }
+    
+    .feature-card__icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .feature-card__icon svg {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .feature-card__title {
+        font-size: var(--font-size-lg);
+    }
+    
+    .feature-card__description {
+        font-size: var(--font-size-sm);
+    }
+    
+    /* Instagram sección en móvil - sin recortes */
+    .instagram-row {
+        overflow: visible; /* permitir que se vea todo el contenido */
+        max-width: 100%;
+    }
+
+    .instagram-row__iframe {
+        width: 100%; /* ajusta al ancho del contenedor/viewport */
+        max-width: 100%;
+        height: 450px; /* más alto para que no se corte el feed */
+        margin: 0 auto; /* centra el iframe */
+    }
+    
+    .instagram-section__title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .instagram-section__follow {
+        font-size: var(--font-size-base);
+    }
+    
+    .instagram-feed {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .instagram-post__stats {
+        font-size: var(--font-size-base);
+    }
+    
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+    
+    section {
+        padding: var(--spacing-2xl) 0;
+    }
+}
+
+/* Pantallas grandes (min-width: 1536px) */
+@media (min-width: 1536px) {
+    .container {
+        max-width: var(--container-2xl);
+    }
+    
+    .hero__title {
+        font-size: 4rem;
+    }
+    
+    .section__title {
+        font-size: var(--font-size-5xl);
+    }
+}
+
+/* Modo paisaje móvil */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .navbar__menu {
+        height: auto;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+/* Reducir animaciones para usuarios que prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
