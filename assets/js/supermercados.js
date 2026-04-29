@@ -170,55 +170,55 @@ risaralda: {
                 nombre: "ARANZAZU",
                 tipo: "especial",
                 imagen: "assets/images/la_bavaria.png",
-                link: ""
+                link: "https://maps.app.goo.gl/fS3GUG5Y5KM9L7mE7"
             },
             {
                 nombre: "ARAUCA",
                 tipo: "especial",
                 imagen: "assets/images/la_ceiba.png",
-                link: ""
+                link: "https://www.facebook.com/Laceibasupermercadosas/"
             },
             {
                 nombre: "BELALCAZAR",
                 tipo: "especial",
                 imagen: "assets/images/don_gabriel.png",
-                link: ""
+                link: "https://www.facebook.com/p/Supermercado-Don-Gabriel-Belalc%C3%A1zar-Caldas-100054348138857/"
             },
             {
                 nombre: "CHINCHINA",
                 tipo: "especial",
                 imagen: "assets/images/cuatromilpas.png",
-                link: ""
+                link: "https://www.instagram.com/supermercadoscuatromilpas/?utm_source=ig_web_button_share_sheet"
             },
             {
                 nombre: "LA FLORIDA",
                 tipo: "especial",
                 imagen: "assets/images/del_campo.png",
-                link: ""
+                link: "https://maps.app.goo.gl/D5sjwgCWTVxBaJuw5"
             },
             {
                 nombre: "LA FLORIDA",
                 tipo: "especial",
                 imagen: "assets/images/el_ahorro.png",
-                link: ""
+                link: "https://www.instagram.com/supermercadoselahorro/?utm_source=ig_web_button_share_sheet"
             },
             {
                 nombre: "MANIZALES",
                 tipo: "especial",
                 imagen: "assets/images/el_ahorro.png",
-                link: ""
+                link: "https://www.instagram.com/supermercadoselahorro/?utm_source=ig_web_button_share_sheet"
             },
             {
                 nombre: "MANIZALES",
                 tipo: "especial",
                 imagen: "assets/images/mana.png",
-                link: ""
+                link: "https://www.instagram.com/autoserviciomana.manizales/?utm_source=ig_web_button_share_sheet"
             },
             {
                 nombre: "MANIZALES",
                 tipo: "especial",
                 imagen: "assets/images/mercatodo.png",
-                link: ""
+                link: "https://maps.app.goo.gl/X3DAenM1gbCQeD2s7"
             },
             {
                 nombre: "MANIZALES",
@@ -230,55 +230,55 @@ risaralda: {
                 nombre: "MANIZALES",
                 tipo: "especial",
                 imagen: "assets/images/del_centro.png",
-                link: ""
+                link: "https://www.instagram.com/supermercadodelcentromanizales/?utm_source=ig_web_button_share_sheet"
             },
             {
                 nombre: "MANIZALES",
                 tipo: "especial",
                 imagen: "assets/images/punto_merco.png",
-                link: ""
+                link: "https://www.instagram.com/puntomerco/?utm_source=ig_web_button_share_sheet"
             },
             {
                 nombre: "MANZANARES",
                 tipo: "especial",
                 imagen: "assets/images/autoservicio_parra.png",
-                link: ""
+                link: "https://www.facebook.com/p/Autoservicio-Parra-hermanos-100063887481412/"
             },
             {
                 nombre: "MARQUETALIA",
                 tipo: "especial",
                 imagen: "assets/images/la_cita.png",
-                link: ""
+                link: "https://www.facebook.com/p/Almac%C3%A9n-y-Autoservicio-la-Cita-100054614147191/"
             },
             {
                 nombre: "NEIRA",
                 tipo: "especial",
                 imagen: "assets/images/la_ganancia.png",
-                link: ""
+                link: "https://www.instagram.com/supermercadolaganancia/?utm_source=ig_web_button_share_sheet"
             },
             {
                 nombre: "PALESTINA",
                 tipo: "especial",
                 imagen: "assets/images/ahita.png",
-                link: ""
+                link: "https://maps.app.goo.gl/dNsL4j2nq8gVb3YR7"
             },
             {
                 nombre: "PENSILVANIA",
                 tipo: "especial",
                 imagen: "assets/images/la_septima.png",
-                link: ""
+                link: "https://maps.app.goo.gl/yXyYonkm5w2bb1Kk7"
             },
             {
                 nombre: "RIOSUCIO",
                 tipo: "especial",
                 imagen: "assets/images/el_bodegon.png",
-                link: ""
+                link: "https://www.facebook.com/ElbodegonRiosucio/"
             },
             {
                 nombre: "SAMANÁ",
                 tipo: "especial",
                 imagen: "assets/images/el_panelero.png",
-                link: ""
+                link: "https://eu-es.facebook.com/people/Supermercado-El-Panelero/100062494040224/"
             },
             {
                 nombre: "SAN JOSÉ",
@@ -290,13 +290,13 @@ risaralda: {
                 nombre: "SAN JOSÉ",
                 tipo: "especial",
                 imagen: "assets/images/mi_tierra.png",
-                link: ""
+                link: "https://maps.app.goo.gl/YBbwncAN8p9psMZp8"
             },
             {
                 nombre: "VILLAMARIA",
                 tipo: "especial",
                 imagen: "assets/images/el_ahorro.png",
-                link: ""
+                link: "https://www.instagram.com/supermercadoselahorro/?utm_source=ig_web_button_share_sheet"
             }
         ]
     },
@@ -320,37 +320,37 @@ risaralda: {
                 nombre: "ARMENIA",
                 tipo: "especial",
                 imagen: "assets/images/laureles.png",
-                link: ""
+                link: "https://www.instagram.com/laureles.estucasa/?utm_source=ig_web_button_share_sheet"
             },
             {
                 nombre: "CIRCASIA",
                 tipo: "especial",
                 imagen: "assets/images/mio.png",
-                link: ""
+                link: "https://maps.app.goo.gl/8aKJPK8Grmme3YS97"
             },
             {
                 nombre: "FILANDIA",
                 tipo: "especial",
                 imagen: "assets/images/mio.png",
-                link: ""
+                link: "https://www.instagram.com/supermercado.mio/?utm_source=ig_web_button_share_sheet"
             },
             {
                 nombre: "LA TEBAIDA",
                 tipo: "especial",
                 imagen: "assets/images/mio.png",
-                link: ""
+                link: "https://www.facebook.com/people/Supermercado-MIO/61553055525768/"
             },
             {
                 nombre: "MONTENEGRO",
                 tipo: "especial",
                 imagen: "assets/images/mercahogar.png",
-                link: ""
+                link: "https://maps.app.goo.gl/9VKvGor3kfegy6LX6"
             },
             {
                 nombre: "SALENTO",
                 tipo: "especial",
                 imagen: "assets/images/super_cocora.png",
-                link: ""
+                link: "https://maps.app.goo.gl/uxYeeB2ScWhnDaKJ9"
             }
         ]
     },
@@ -386,7 +386,7 @@ risaralda: {
                 nombre: "LA ÁGUILA",
                 tipo: "especial",
                 imagen: "assets/images/cheche.png",
-                link: ""
+                link: "https://maps.app.goo.gl/bwJ27gD7KES9yrGm9"
             },
             {
                 nombre: "LA UNIÓN",
@@ -416,13 +416,13 @@ risaralda: {
                 nombre: "ITAGUÍ",
                 tipo: "especial",
                 imagen: "assets/images/almin.png",
-                link: ""
+                link: "https://www.facebook.com/somosalmin/"
             },
             {
                 nombre: "RIONEGRO",
                 tipo: "especial",
                 imagen: "assets/images/superoriente.png",
-                link: ""
+                link: "https://www.superoriente.com.co/"
             }
         ]
     }
