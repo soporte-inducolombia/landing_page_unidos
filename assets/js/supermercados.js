@@ -284,7 +284,7 @@ risaralda: {
                 nombre: "SAN JOSÉ",
                 tipo: "especial",
                 imagen: "assets/images/jm.png",
-                link: ""
+                link: "https://maps.app.goo.gl/CBUhiUWpUJngWU618"
             },
             {
                 nombre: "SAN JOSÉ",
